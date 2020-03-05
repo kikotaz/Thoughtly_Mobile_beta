@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginStart="3dp"
+    android:layout_marginEnd="2dp"
+    app:cardElevation="4dp"
+    android:id="@+id/thoughtCard">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/thoughtCardImage"
+        android:scaleType="fitXY"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/thoughtTitle"
+        android:padding="10dp"
+        android:textSize="25sp"
+        android:fontFamily="@font/righteous_regular"
+        android:textColor="@color/normal"
+        android:background="#90FFFFFF"/>
+
+</android.support.v7.widget.CardView>

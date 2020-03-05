@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center_vertical"
+    tools:context=".AboutFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/open_sans_semibold"
+        android:textSize="20sp"
+        android:layout_margin="10dp"
+        android:textColor="@color/important"
+        android:text="@string/developed_by"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/righteous_regular"
+        android:textSize="26sp"
+        android:textColor="@color/normal"
+        android:text="@string/developer_name"
+        android:textAlignment="center"/>
+
+    <Button
+        android:id="@+id/callMeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/righteous_regular"
+        android:textColor="@color/normal"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:background="@color/colorPrimary"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="20dp"
+        android:padding="20dp"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/call"/>
+
+    <Button
+        android:id="@+id/textMeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/righteous_regular"
+        android:textColor="@color/normal"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:background="@color/colorPrimary"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="20dp"
+        android:padding="20dp"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/sms"/>
+
+    <Button
+        android:id="@+id/visitAisButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/righteous_regular"
+        android:textColor="@color/normal"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:background="@color/colorPrimary"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="20dp"
+        android:padding="20dp"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/website"/>
+
+    <com.google.android.gms.maps.MapView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="30dp"
+        android:id="@+id/aboutMap" />
+</LinearLayout>

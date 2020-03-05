@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/mainButton"
+        android:enabled="true"
+        android:title="@string/mainWord"
+        android:icon="@drawable/ic_main"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/accountButton"
+        android:enabled="true"
+        android:title="@string/account"
+        android:icon="@drawable/ic_account"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/reminderButton"
+        android:enabled="true"
+        android:title="@string/reminder"
+        android:icon="@drawable/ic_reminder"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/aboutButton"
+        android:enabled="true"
+        android:title="@string/about"
+        android:icon="@drawable/ic_gallery"
+        app:showAsAction="ifRoom"/>
+
+</menu>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ThoughtActivity">
+
+    <ImageView
+        android:id="@+id/thoughtBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/thought_image"
+        android:scaleType="fitXY"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="vertical"
+        android:layout_marginBottom="40dp">
+
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/insertThoughtProgress"
+            style="?android:attr/progressBarStyleSmall"
+            android:max="100"
+            android:backgroundTint="@color/white" />
+
+        <Chronometer
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/open_sans_bold"
+            android:textColor="@color/normal"
+            android:background="#90FFFFFF"
+            android:textSize="40sp"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/recordTimer"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/righteous_regular"
+            android:textColor="@color/important"
+            android:text="@string/hold_down"
+            android:background="#90FFFFFF"
+            android:layout_marginBottom="10dp"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/recordThoughtBtn"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/ic_record"
+            android:layout_gravity="center_horizontal"
+            android:padding="20dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/border"
+            android:contentDescription="@string/start_recording">
+        </ImageButton>
+    </LinearLayout>
+
+
+
+</FrameLayout>

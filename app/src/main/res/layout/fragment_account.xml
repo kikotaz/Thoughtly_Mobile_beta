@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AccountFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/your_info"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:fontFamily="@font/open_sans_regular"
+        android:textColor="@color/important"
+        android:textSize="25sp"/>
+
+    <ViewSwitcher
+        android:id="@+id/userNameTextSwitcher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/pale_white">
+
+        <TextView
+            android:id="@+id/userNameAccountText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:fontFamily="@font/righteous_regular"
+            android:padding="10dp"
+            android:textColor="@color/normal"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/userNameAccountEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:backgroundTint="@color/background"
+            android:fontFamily="@font/righteous_regular"
+            android:hint="@string/your_name"
+            android:inputType="textMultiLine"
+            android:maxLength="30"
+            android:padding="10dp"
+            android:textColor="@color/normal"
+            android:textSize="20sp" />
+    </ViewSwitcher>
+
+    <ViewSwitcher
+        android:id="@+id/emailTextSwitcher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/pale_white">
+
+        <TextView
+            android:id="@+id/emailAccountText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:fontFamily="@font/righteous_regular"
+            android:padding="10dp"
+            android:textColor="@color/normal"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/emailAccountEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:backgroundTint="@color/background"
+            android:fontFamily="@font/righteous_regular"
+            android:hint="@string/your_name"
+            android:inputType="textEmailAddress"
+            android:maxLength="30"
+            android:padding="10dp"
+            android:textColor="@color/normal"
+            android:textSize="20sp" />
+    </ViewSwitcher>
+
+    <TextView
+        android:id="@+id/dobAccountText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="@font/righteous_regular"
+        android:padding="10dp"
+        android:textColor="@color/normal"
+        android:textSize="20sp" />
+
+    <ViewSwitcher
+        android:id="@+id/passwordTextSwitcher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/pale_white">
+
+        <TextView
+            android:id="@+id/passwordAccountText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:fontFamily="@font/righteous_regular"
+            android:padding="10dp"
+            android:textColor="@color/normal"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/passwordAccountEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:backgroundTint="@color/background"
+            android:fontFamily="@font/righteous_regular"
+            android:hint="@string/new_password"
+            android:inputType="textPassword"
+            android:maxLength="30"
+            android:padding="10dp"
+            android:textColor="@color/normal"
+            android:textSize="20sp" />
+    </ViewSwitcher>
+
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editProgress"
+        style="?android:attr/progressBarStyleSmall"
+        android:max="100"
+        android:backgroundTint="@color/white" />
+
+    <Button
+        android:id="@+id/editAccountButton"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/open_sans_bold"
+        android:textColor="@color/normal"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:background="@color/colorPrimary"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/edit"/>
+
+    <Button
+        android:id="@+id/logoutAccountButton"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/open_sans_bold"
+        android:textColor="@color/normal"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:background="@color/colorPrimary"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/logout"/>
+
+</LinearLayout>

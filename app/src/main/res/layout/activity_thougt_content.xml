@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:id="@+id/contentScroll"
+    tools:context=".ThougtContentActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/pale_white">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top">
+
+            <ImageView
+                android:id="@+id/thoughtContentImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true" />
+
+            <ProgressBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editThoughtProgress"
+                style="?android:attr/progressBarStyleLarge"
+                android:max="100"
+                android:backgroundTint="@color/white" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:background="#90FFFFFF">
+
+                <ViewSwitcher
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editTitleImageSwitcher"
+                    android:layout_marginStart="5dp"
+                    android:layout_gravity="center_vertical">
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border"
+                        android:src="@drawable/ic_edit"
+                        android:id="@+id/titleEditButton"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:padding="6dp"
+                        android:contentDescription="@string/edit_button"/>
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border"
+                        android:src="@drawable/ic_done"
+                        android:id="@+id/titleEditButtonDone"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:padding="6dp"
+                        android:contentDescription="@string/done_button"/>
+
+                </ViewSwitcher>
+
+                <ViewSwitcher
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editTitleTextSwitcher">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/thoughtContentTitle"
+                        android:layout_marginEnd="20dp"
+                        android:padding="10dp"
+                        android:textSize="25sp"
+                        android:fontFamily="@font/righteous_regular"
+                        android:textColor="@color/normal" />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/thoughtContentTitleEdit"
+                        android:layout_marginEnd="20dp"
+                        android:padding="10dp"
+                        android:textSize="25sp"
+                        android:fontFamily="@font/righteous_regular"
+                        android:textColor="@color/normal"
+                        android:inputType="textMultiLine"
+                        android:maxLength="40"
+                        android:backgroundTint="@color/pale_white"
+                        android:background="@null"/>
+                </ViewSwitcher>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border"
+                    android:src="@drawable/ic_play"
+                    android:id="@+id/playButton"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:padding="15dp"
+                    android:layout_marginBottom="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:contentDescription="@string/play_button"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border"
+                    android:src="@drawable/ic_down"
+                    android:id="@+id/downButton"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:padding="15dp"
+                    android:layout_marginBottom="50dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_gravity="end"
+                    android:contentDescription="@string/play_button"/>
+
+            </LinearLayout>
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:background="#90FFFFFF">
+
+            <ViewSwitcher
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/editDetailsImageSwitcher"
+                android:layout_marginStart="5dp"
+                android:layout_gravity="center_vertical">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border"
+                    android:src="@drawable/ic_edit"
+                    android:id="@+id/detailsEditButton"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:padding="6dp"
+                    android:contentDescription="@string/edit_button"/>
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border"
+                    android:src="@drawable/ic_done"
+                    android:id="@+id/detailsEditButtonDone"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:padding="6dp"
+                    android:contentDescription="@string/done_button"/>
+
+            </ViewSwitcher>
+
+            <ViewSwitcher
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/editDetailsTextSwitcher"
+                android:backgroundTint="@color/pale_white"
+                android:layout_marginBottom="30dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/thoughtContentDetails"
+                    android:layout_marginEnd="20dp"
+                    android:padding="10dp"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/righteous_regular"
+                    android:textColor="@color/normal"
+                    android:hint="@string/add_details"/>
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/thoughtContentDetailsEdit"
+                    android:layout_marginEnd="20dp"
+                    android:padding="10dp"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/righteous_regular"
+                    android:textColor="@color/normal"
+                    android:inputType="textMultiLine"
+                    android:maxLength="255"
+                    android:backgroundTint="@color/pale_white"
+                    android:background="@null"
+                    android:hint="@string/add_details"/>
+            </ViewSwitcher>
+        </LinearLayout>
+
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:map="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:id="@+id/contentMap"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            />
+
+    </LinearLayout>
+
+</ScrollView>
